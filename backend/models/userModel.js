@@ -26,23 +26,26 @@ const userSchema = mongoose.Schema({
   address: {
     line1: {
       type: String,
-      required: true,
+      required: [true, "line 1 of address is required"],
     },
     line2: {
       type: String,
-      required: true,
+    },
+    zipcode: {
+      type: String,
+      required: [true, "zipcode is required"],
     },
     city: {
       type: String,
-      required: true,
+      required: [true, "please enter city name"],
     },
     state: {
       type: String,
-      required: true,
+      required: [true, "please enter state"],
     },
     contry: {
       type: String,
-      required: true,
+      required: [true, "please enter contry"],
     },
   },
   appointements: [
@@ -59,4 +62,4 @@ const userSchema = mongoose.Schema({
   ],
 });
 
-mongoose.export = new mongoose.model("User", userSchema);
+module.exports = mongoose.model("User", userSchema);

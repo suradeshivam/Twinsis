@@ -19,10 +19,6 @@ const doctorSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  mobile: {
-    type: String,
-    required: [true, "Please enter Mobile Number"],
-  },
   documents: [
     {
       name: {
