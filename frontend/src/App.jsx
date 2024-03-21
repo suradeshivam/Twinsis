@@ -1,18 +1,18 @@
 import { useState } from "react";
 import "./App.css";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Navbar.jsx";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./HomePage";
-import Profile from "./Components/Profile";
-import Appointments from "./Components/Appointments";
-import Appointment from "./Components/Appointment";
-import Book from "./Components/Book";
-import DoctorDashboarad from "./DoctorDashboarad";
-import DocHistory from "./Components/DocHistory";
-import Analytics from "./Components/Analytics";
-import Calender from "./Components/Calender";
-import PatientDetailsPage from "./Components/PatientDetailsPage";
-import Feedback from "./Components/Feedback";
+import HomePage from "./HomePage.jsx";
+import Profile from "./Components/Profile.jsx";
+import Appointments from "./Components/Appointments.jsx";
+import Appointment from "./Components/Appointment.jsx";
+import Book from "./Components/Book.jsx";
+import DoctorDashboarad from "./DoctorDashboarad.jsx";
+import DocHistory from "./Components/DocHistory.jsx";
+import Analytics from "./Components/Analytics.jsx";
+import Calender from "./Components/Calender.jsx";
+import PatientDetailsPage from "./Components/PatientDetailsPage.jsx";
+import Feedback from "./Components/Feedback.jsx";
 
 function App() {
   return (
