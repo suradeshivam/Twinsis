@@ -3,15 +3,16 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage";
-import Profile1 from "./Components/Profile1";
+import Profile from "./Components/Profile";
 import Appointments from "./Components/Appointments";
 import Appointment from "./Components/Appointment";
 import Book from "./Components/Book";
 import DoctorDashboarad from "./DoctorDashboarad";
 import DocHistory from "./Components/DocHistory";
-import Setting from "./Components/Setting";
 import Analytics from "./Components/Analytics";
 import Calender from "./Components/Calender";
+import PatientDetailsPage from "./Components/PatientDetailsPage";
+import Feedback from "./Components/Feedback";
 
 function App() {
   return (
@@ -22,13 +23,17 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="book" element={<Book />} />
         <Route path="doctor" element={<DoctorDashboarad />}>
-          <Route path="" element={<Profile1 />} />
+          <Route path="" element={<Profile />} />
           <Route path="appointments" element={<Appointments />} />
           <Route path="appointment" element={<Appointment />} />
           <Route path="history" element={<DocHistory />} />
+          <Route
+            path="history/patient-details/:id"
+            element={<PatientDetailsPage />}
+          />
           <Route path="calender" element={<Calender />} />
           <Route path="analytics" element={<Analytics />} />
-          <Route path="setting" element={<Setting />} />
+          <Route path="feedback" element={<Feedback />} />
         </Route>
       </Routes>
     </div>

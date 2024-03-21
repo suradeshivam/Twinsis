@@ -152,13 +152,13 @@ const Sidebar = () => {
         </Link>
 
         <Link
-          to={"/doctor/setting"}
+          to={"/doctor/feedback"}
           onClick={() => {
             sm && sideOpen ? setSideOpen(!sideOpen) : "";
           }}>
           <li
             className={` ${
-              isActivePath("/doctor/setting")
+              isActivePath("/doctor/feedback")
                 ? "bg-emerald-50 text-emerald-400"
                 : ""
             } flex m-2 hover:text-emerald-400 hover:bg-emerald-50 rounded-md p-2`}>
@@ -169,7 +169,7 @@ const Sidebar = () => {
               className={`text-base  ml-2 font-semibold py-1 ${
                 sideOpen ? "" : "hidden"
               }`}>
-              Setting
+              Feedback
             </span>
           </li>
         </Link>
