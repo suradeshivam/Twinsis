@@ -65,8 +65,8 @@ const doctorSchema = new mongoose.Schema({
   ],
   notifications: [
     {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Notification",
+      type: String,
+      enum: ["reminder", "report"],
     },
   ],
   isVerified: {

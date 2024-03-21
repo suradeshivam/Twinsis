@@ -19,35 +19,43 @@ const Sidebar = () => {
   }
 
   const isActivePath = (path) => {
-    console.log(path);
-    console.log(location.pathname);
+    // console.log(path);
+    // console.log(location.pathname);
+    // will check later for optimization ^
     return location.pathname === path;
   };
 
   return (
     <div
-      className={`z-10 ${
-        sideOpen ? "w-72" : "w-14"
-      } bg-teal-800 h-screen relative duration-300 `}>
+      className={`z-10 m-2 rounded-md shadow ${
+        sideOpen ? "w-72  " : "w-14"
+      } bg-white border border-slate-300 text-gray-500 overflow-y-auto  relative duration-300 `}
+      style={{ height: "calc(100vh - 2rem)" }}>
       <AiOutlineMenu
         onClick={() => setSideOpen(!sideOpen)}
         className="mx-3 mt-3 bg-white rounded-full text-3xl p-1 absolute -right-0"
       />
-      <sapn className={`text-3xl font-semibold ${sideOpen ? "" : "hidden"}`}>
+      <div
+        className={`text-2xl text-gray-500 m-2 ml-4 font-semibold ${
+          sideOpen ? "" : "hidden"
+        }`}>
         Dashboard
-      </sapn>
-      <ul className={`${sideOpen ? "pt-4" : "pt-14"}`}>
+      </div>
+      <ul className={`${sideOpen ? "pt-4" : "pt-14"}  text-gray-500`}>
         <Link
           to={"/doctor/"}
           onClick={() => {
-            sm ? setSideOpen(!open) : "";
+            sm && sideOpen ? setSideOpen(!sideOpen) : "";
           }}>
-          <li className="flex bg-teal-500 m-2 rounded-md p-2">
+          <li
+            className={` ${
+              isActivePath("/doctor/") ? "bg-emerald-50 text-emerald-400" : ""
+            } flex m-2  hover:text-emerald-400 hover:bg-emerald-50 rounded-md p-2`}>
             <span>
               <CgProfile className="my-1 bg-white rounded-full text-2xl p-1  " />
             </span>
             <span
-              className={`text-xl  ml-2 font-semibold ${
+              className={`text-base  ml-2 font-semibold py-1 ${
                 sideOpen ? "" : "hidden"
               }`}>
               Profile
@@ -56,20 +64,20 @@ const Sidebar = () => {
         </Link>
         <Link
           to={"/doctor/appointments"}
-          style={{
-            backgroundColor: isActivePath("/doctor/appointments")
-              ? "red"
-              : "transparent",
-          }}
           onClick={() => {
-            sm ? setSideOpen(!open) : "";
+            sm && sideOpen ? setSideOpen(!sideOpen) : "";
           }}>
-          <li className="flex bg-teal-500 m-2 rounded-md p-2">
+          <li
+            className={` ${
+              isActivePath("/doctor/appointments")
+                ? "bg-emerald-50 text-emerald-400"
+                : ""
+            } flex m-2 hover:text-emerald-400 hover:bg-emerald-50 rounded-md p-2`}>
             <span>
               <FaUserDoctor className="my-1 bg-white rounded-full text-2xl p-1  " />
             </span>
             <span
-              className={`text-xl  ml-2 font-semibold ${
+              className={`text-base  ml-2 font-semibold py-1 ${
                 sideOpen ? "" : "hidden"
               }`}>
               Appointments
@@ -79,14 +87,19 @@ const Sidebar = () => {
         <Link
           to={"/doctor/history"}
           onClick={() => {
-            sm ? setSideOpen(!open) : "";
+            sm && sideOpen ? setSideOpen(!sideOpen) : "";
           }}>
-          <li className="flex bg-teal-500 m-2 rounded-md p-2">
+          <li
+            className={` ${
+              isActivePath("/doctor/history")
+                ? "bg-emerald-50 text-emerald-400"
+                : ""
+            } flex m-2 hover:text-emerald-400 hover:bg-emerald-50 rounded-md p-2`}>
             <span>
               <FaHistory className="my-1 bg-white rounded-full text-2xl p-1  " />
             </span>
             <span
-              className={`text-xl  ml-2 font-semibold ${
+              className={`text-base  ml-2 font-semibold py-1 ${
                 sideOpen ? "" : "hidden"
               }`}>
               History
@@ -96,14 +109,19 @@ const Sidebar = () => {
         <Link
           to={"/doctor/calender"}
           onClick={() => {
-            sm ? setSideOpen(!open) : "";
+            sm && sideOpen ? setSideOpen(!sideOpen) : "";
           }}>
-          <li className="flex bg-teal-500 m-2 rounded-md p-2">
+          <li
+            className={` ${
+              isActivePath("/doctor/calender")
+                ? "bg-emerald-50 text-emerald-400"
+                : ""
+            } flex m-2 hover:text-emerald-400 hover:bg-emerald-50 rounded-md p-2`}>
             <span>
               <FaCalendarAlt className="my-1 bg-white rounded-full text-2xl p-1  " />
             </span>
             <span
-              className={`text-xl  ml-2 font-semibold ${
+              className={`text-base  ml-2 font-semibold py-1 ${
                 sideOpen ? "" : "hidden"
               }`}>
               Calender
@@ -113,14 +131,19 @@ const Sidebar = () => {
         <Link
           to={"/doctor/analytics"}
           onClick={() => {
-            sm ? setSideOpen(!open) : "";
+            sm && sideOpen ? setSideOpen(!sideOpen) : "";
           }}>
-          <li className="flex bg-teal-500 m-2 rounded-md p-2">
+          <li
+            className={` ${
+              isActivePath("/doctor/analytics")
+                ? "bg-emerald-50 text-emerald-400"
+                : ""
+            } flex m-2 hover:text-emerald-400 hover:bg-emerald-50 rounded-md p-2`}>
             <span>
               <FaChartPie className="my-1 bg-white rounded-full text-2xl p-1  " />
             </span>
             <span
-              className={`text-xl  ml-2 font-semibold ${
+              className={`text-base  ml-2 font-semibold py-1 ${
                 sideOpen ? "" : "hidden"
               }`}>
               Analytics
@@ -131,14 +154,19 @@ const Sidebar = () => {
         <Link
           to={"/doctor/setting"}
           onClick={() => {
-            sm ? setSideOpen(!open) : "";
+            sm && sideOpen ? setSideOpen(!sideOpen) : "";
           }}>
-          <li className="flex bg-teal-500 m-2 rounded-md p-2">
+          <li
+            className={` ${
+              isActivePath("/doctor/setting")
+                ? "bg-emerald-50 text-emerald-400"
+                : ""
+            } flex m-2 hover:text-emerald-400 hover:bg-emerald-50 rounded-md p-2`}>
             <span>
               <IoSettings className="my-1 bg-white rounded-full text-2xl p-1  " />
             </span>
             <span
-              className={`text-xl  ml-2 font-semibold ${
+              className={`text-base  ml-2 font-semibold py-1 ${
                 sideOpen ? "" : "hidden"
               }`}>
               Setting
@@ -147,14 +175,15 @@ const Sidebar = () => {
         </Link>
         <Link
           onClick={() => {
-            sm ? setSideOpen(!open) : "";
+            sm && sideOpen ? setSideOpen(!sideOpen) : "";
           }}>
-          <li className="flex bg-teal-500 m-2 rounded-md p-2">
+          <li
+            className={` flex m-2 hover:text-emerald-400 hover:bg-emerald-50 rounded-md p-2`}>
             <span>
               <FaSignOutAlt className="my-1 bg-white rounded-full text-2xl p-1  " />
             </span>
             <span
-              className={`text-xl  ml-2 font-semibold ${
+              className={`text-base  ml-2 font-semibold py-1 ${
                 sideOpen ? "" : "hidden"
               }`}>
               Sign out

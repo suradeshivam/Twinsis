@@ -1,0 +1,353 @@
+/* Reset CSS */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #f9f9f9;
+    /* Light gray background */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    animation: fadeIn 0.5s ease;
+    /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Form Title Styles */
+.form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #333;
+    /* Dark gray text */
+    animation: slideInDown 0.5s ease;
+    /* Slide-in animation */
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    /* Smooth transition */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    /* Gray text */
+}
+
+/* Input and Select Styles */
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group select,
+.form-group input[type="file"],
+.form-group textarea {
+    width: calc(100% - 16px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    transition: border-color 0.3s;
+    /* Smooth transition */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="email"]:focus,
+.form-group select:focus,
+.form-group input[type="file"]:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    /* Blue border on focus */
+}
+
+/* Button Styles */
+button {
+    width: 200px;
+    height: 50px;
+    background-color: #007bff;
+    /* Blue button */
+    color: white;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Inline Group Styles */
+.inline-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline-group .form-group {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .inline-group {
+        flex-direction: column;
+    }
+
+    .inline-group .form-group {
+        margin: 0 0 10px 0;
+    }
+}
+
+/* Photo Upload Styles */
+.photo-upload {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    margin-right: 30px;
+}
+
+.profile-photo-preview {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+    /* Blue border */
+    cursor: pointer;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-upload {
+    border: 2px solid #007bff;
+    color: white;
+    background-color: #007bff;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.file-types {
+    color: #666;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Input Group Styles */
+.input-group,
+.input-row>.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-row>.input-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.input-row>.input-group:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    .input-row {
+        flex-direction: column;
+    }
+
+    .input-row>.input-group {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .input-row>.input-group:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* About Me & Clinic Info Section Styles */
+.section {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    animation: slideInUp 0.5s ease;
+    /* Slide-in animation */
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.section-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+    /* Dark gray text */
+}
+
+/* Document Verification Section Styles */
+.document-verification .form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.document-verification .section {
+    margin-bottom: 2rem;
+}
+
+.document-verification .form-group {
+    margin-bottom: 1rem;
+}
+
+.document-verification .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    /* Dark gray text */
+}
+
+.document-verification .form-group input[type="text"],
+.document-verification .form-group input[type="date"],
+.document-verification .form-group textarea,
+.document-verification .form-group input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.document-verification textarea {
+    height: 100px;
+}
+
+.document-verification .file-types {
+    font-size: 1rem;
+    color: #666;
+    /* Gray text */
+}
+
+.document-verification .form-group input[type="file"] {
+    margin-top: 0.5rem;
+}
+
+.document-verification .form-group label[for="documentUpload"] {
+    background-color: #007bff;
+    color: white;
+    padding: 0.25rem 0.5rem;
+
+
+    border-radius: 6px;
+    width: 100px;
+    height: 55px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.document-verification .form-group label[for="documentUpload"]:hover {
+    background-color: #0056b3;
+}
+
+.delete-experience-btn {
+    cursor: pointer;
+    color: rgb(32, 43, 94);
+    /* Change color as desired */
+    font-size: 14px;
+    /* Adjust font size as desired */
+    margin-top: 10px;
+    /* Adjust margin as desired */
+}
+
+.delete-experience-btn:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+}

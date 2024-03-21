@@ -1,0 +1,178 @@
+/* Business Hours Container */
+.business-hours {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Business Hours Title */
+.business-hours h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* All Days Checkbox Section */
+.all-days {
+    margin-bottom: 20px;
+}
+
+/* All Days Checkbox Label */
+.all-days label {
+    font-weight: bold;
+}
+
+/* Header Row Labels */
+.time-labels {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.time-labels span {
+    flex-basis: 33%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Individual Day Row */
+.day-hours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Increase the margin-bottom value to add more gap */
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Disabled Day Row */
+.day-hours.disabled {
+    background-color: #f3f3f3;
+}
+
+/* Individual Day Name */
+.day-name {
+    flex: 1;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Style for Time Dropdowns */
+select {
+    padding: 8px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    flex: 1;
+}
+
+/* Disabled Style for Time Dropdowns */
+.disabled select {
+    background-color: #f3f3f3;
+}
+
+/* Custom Checkbox Style */
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6a6868;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #007bff;
+    border: none;
+}
+
+/* Select All Checkbox Section */
+.select-all {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    /* Move the select-all-time section to the right */
+}
+
+/* Select All From and To Dropdowns */
+.select-all select {
+    padding: 8px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 80px;
+    /* Set a fixed width for consistency */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .business-hours {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .select-all {
+        display: flex;
+        align-items: center;
+    }
+
+    .select-all-checkbox {
+        margin-right: 20px;
+        /* Adjust this value to change the gap */
+        margin-bottom: 20px;
+    }
+
+    .select-all-time {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* Your remaining CSS styles */
+.Hbutton {
+    display: inline-block;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #28a745;
+    border: 1px solid transparent;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.Hbutton:hover {
+    background-color: #218838;
+}
+
+.Hbutton:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.Hbutton:disabled {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    cursor: not-allowed;
+}

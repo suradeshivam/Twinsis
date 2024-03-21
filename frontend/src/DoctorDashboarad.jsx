@@ -9,20 +9,24 @@ const DoctorDashboarad = () => {
   const { sideOpen, setSideOpen } = OrderState();
 
   return (
-    <div className="flex">
+    <div className="flex font-sans  rounded-md text-gray-500  ">
       <Sidebar />
       <div
-        className={`w-full sm:relative ${sideOpen ? "absolute" : ""} h-screen`}>
-        <div className="bg-orange-300  flex justify-between  rounded-md m-2 p-4 ">
+        className={`  w-full sm:relative ${
+          sideOpen ? "absolute" : ""
+        } h-screen`}>
+        <div className="bg-white border border-slate-300 flex justify-between shadow  rounded-md m-2 p-4 ">
           <div>
-            <span className=" text-3xl font-bold">Doctor Name</span>
+            <span className=" text-3xl ">Doctor Name</span>
             <span className="block">user_id</span>
           </div>
           <div className="pt-2 ">
             <img src={vector} className="size-16 rounded-full" alt="ff" />
           </div>
         </div>
-
+        {/* <div className="bg-white overflow-auto shadow  text-black  flex justify-between  rounded-md m-2 p-4 ">
+          <Outlet />
+        </div> */}
         <Outlet />
       </div>
     </div>

@@ -1,0 +1,253 @@
+{
+  "success": true,
+  "appointments": [
+    {
+      "_id": "65f958c1407ca32c169b3c95",
+      "patient": {
+        "address": {
+          "line1": "shirdi",
+          "zipcode": "423400",
+          "city": "shirdi",
+          "state": "MH",
+          "contry": "IND"
+        },
+        "_id": "65f7a436ff3e7437ae00ed4d",
+        "name": "krushna",
+        "email": "krushna@gmail.com",
+        "mobile": "1234012340",
+        "documents": [],
+        "symptoms": ["Fever", "Cold", "Headche", "Swelling", "Astama"],
+        "appointements": [],
+        "notifications": [],
+        "__v": 0,
+        "age": 22
+      },
+      "doctor": {
+        "address": {
+          "line1": "yeola",
+          "line2": "yeola",
+          "city": "yeola",
+          "state": "maharashtra",
+          "contry": "india"
+        },
+        "_id": "65f01c5c79fb2220f974cf88",
+        "name": "Dr sonawane",
+        "email": "drsonawane@gmail.com",
+        "mobile": "12345234",
+        "appointements": [],
+        "notifications": [],
+        "isVerified": false,
+        "documents": [],
+        "__v": 0
+      },
+      "date": "2024-03-12T08:00:00.000Z",
+      "isCanceled": false,
+      "observations": [],
+      "rescheduled": false,
+      "consent": false,
+      "concluded": false,
+      "prescriptions": ["CT Scan", "Sonograpy", "RetroScan"],
+      "aipredicted": "Covid 19",
+      "__v": 0
+    },
+    {
+      "_id": "65f958d4407ca32c169b3c97",
+      "patient": {
+        "address": {
+          "line1": "shirdi",
+          "zipcode": "423400",
+          "city": "shirdi",
+          "state": "MH",
+          "contry": "IND"
+        },
+        "_id": "65f7a582c33f4ae295cf65c1",
+        "name": "shivam",
+        "email": "shivam@gmail.com",
+        "mobile": "1234012340",
+        "documents": [],
+        "symptoms": ["Fever", "Cold", "Headche", "Swelling"],
+        "appointements": [],
+        "notifications": [],
+        "__v": 0
+      },
+      "doctor": {
+        "address": {
+          "line1": "yeola",
+          "line2": "yeola",
+          "city": "yeola",
+          "state": "maharashtra",
+          "contry": "india"
+        },
+        "_id": "65f01c5c79fb2220f974cf88",
+        "name": "Dr sonawane",
+        "email": "drsonawane@gmail.com",
+        "mobile": "12345234",
+        "appointements": [],
+        "notifications": [],
+        "isVerified": false,
+        "documents": [],
+        "__v": 0
+      },
+      "date": "2024-03-12T08:00:00.000Z",
+      "isCanceled": false,
+      "observations": [],
+      "rescheduled": false,
+      "consent": false,
+      "concluded": false,
+      "prescriptions": [],
+      "aipredicted": "Covid 19",
+      "__v": 0
+    },
+    {
+      "_id": "65f9590b407ca32c169b3c9c",
+      "patient": {
+        "address": {
+          "line1": "shirdi",
+          "zipcode": "423400",
+          "city": "shirdi",
+          "state": "MH",
+          "contry": "IND"
+        },
+        "_id": "65f958fe407ca32c169b3c9a",
+        "name": "vaibhav",
+        "email": "vaibhav@gmail.com",
+        "mobile": "1234012340",
+        "documents": [],
+        "symptoms": [
+          "Fever",
+          "Cold",
+          "Headche",
+          "Swelling",
+          "Astma",
+          "Cooling"
+        ],
+        "appointements": [],
+        "notifications": [],
+        "__v": 0
+      },
+      "doctor": {
+        "address": {
+          "line1": "yeola",
+          "line2": "yeola",
+          "city": "yeola",
+          "state": "maharashtra",
+          "contry": "india"
+        },
+        "_id": "65f01c5c79fb2220f974cf88",
+        "name": "Dr sonawane",
+        "email": "drsonawane@gmail.com",
+        "mobile": "12345234",
+        "appointements": [],
+        "notifications": [],
+        "isVerified": false,
+        "documents": [],
+        "__v": 0
+      },
+      "date": "2024-03-12T08:00:00.000Z",
+      "isCanceled": false,
+      "observations": [],
+      "rescheduled": false,
+      "consent": false,
+      "concluded": false,
+      "prescriptions": [],
+      "aipredicted": "Covid 19",
+      "__v": 0
+    },
+    {
+      "_id": "65f9592f407ca32c169b3ca1",
+      "patient": {
+        "address": {
+          "line1": "shirdi",
+          "zipcode": "423400",
+          "city": "shirdi",
+          "state": "MH",
+          "contry": "IND"
+        },
+        "_id": "65f9591c407ca32c169b3c9f",
+        "name": "vishal",
+        "email": "vishal@gmail.com",
+        "mobile": "1234012340",
+        "documents": [],
+        "symptoms": ["Fever", "Cold", "Headche", "Swelling"],
+        "appointements": [],
+        "notifications": [],
+        "__v": 0
+      },
+      "doctor": {
+        "address": {
+          "line1": "yeola",
+          "line2": "yeola",
+          "city": "yeola",
+          "state": "maharashtra",
+          "contry": "india"
+        },
+        "_id": "65f01c5c79fb2220f974cf88",
+        "name": "Dr sonawane",
+        "email": "drsonawane@gmail.com",
+        "mobile": "12345234",
+        "appointements": [],
+        "notifications": [],
+        "isVerified": false,
+        "documents": [],
+        "__v": 0
+      },
+      "date": "2024-03-12T08:00:00.000Z",
+      "isCanceled": false,
+      "observations": [],
+      "rescheduled": false,
+      "consent": false,
+      "concluded": false,
+      "prescriptions": [],
+      "aipredicted": "Covid 19",
+      "__v": 0
+    },
+    {
+      "_id": "65f9595b407ca32c169b3ca6",
+      "patient": {
+        "address": {
+          "line1": "shirdi",
+          "zipcode": "423400",
+          "city": "shirdi",
+          "state": "MH",
+          "contry": "IND"
+        },
+        "_id": "65f95945407ca32c169b3ca4",
+        "name": "akshay",
+        "email": "akshay@gmail.com",
+        "mobile": "1234012340",
+        "documents": [],
+        "symptoms": ["Fever", "Cold", "Headche", "Swelling"],
+        "appointements": [],
+        "notifications": [],
+        "__v": 0
+      },
+      "doctor": {
+        "address": {
+          "line1": "yeola",
+          "line2": "yeola",
+          "city": "yeola",
+          "state": "maharashtra",
+          "contry": "india"
+        },
+        "_id": "65f01c5c79fb2220f974cf88",
+        "name": "Dr sonawane",
+        "email": "drsonawane@gmail.com",
+        "mobile": "12345234",
+        "appointements": [],
+        "notifications": [],
+        "isVerified": false,
+        "documents": [],
+        "__v": 0
+      },
+      "date": "2024-03-12T08:00:00.000Z",
+      "isCanceled": false,
+      "observations": [],
+      "rescheduled": false,
+      "consent": false,
+      "concluded": false,
+      "prescriptions": [],
+      "aipredicted": "Covid 19",
+      "__v": 0
+    }
+  ]
+}

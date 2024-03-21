@@ -1,0 +1,87 @@
+
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.containersss {
+    position: fixed;
+    top: 1/2;
+    left: 1/2;
+    transform: translate(-1/2, -1/2);
+    background: white;
+    padding: 8;
+    border-radius: 8;
+    box-shadow: 0 2 10 rgba(0, 0, 0, 0.2);
+    z-index: 101;
+    max-width: md;
+    width: full;
+}
+
+.content {
+    text-align: center;
+}
+
+.check-icon {
+    color: green-500;
+    font-size: 4xl;
+}
+
+.text-title {
+    font-size: 2xl;
+    margin-top: 2;
+}
+
+.text-subtitle {
+    color: gray-700;
+    margin-bottom: 4;
+}
+
+.form-group {
+    margin-bottom: 4;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2;
+}
+
+.input {
+    width: calc(100% - 10);
+    padding: 2;
+    border: 1 solid border-gray-300;
+    border-radius: 4px;
+    focus: outline-none;
+    focus: border-indigo-500;
+}
+
+.buttonys {
+    cursor: pointer;
+    @apply cursor-pointer py-2 px-4 rounded font-bold transition duration-300;
+
+}
+
+.confirmbtn {
+    @apply text-green-600 font-bold text-base;
+    ;
+}
+
+.confirmbtn:hover {
+    @apply text-green-400;
+}
+
+.cancel-btn {
+    /* @apply bg-red-500; */
+    @apply font-bold text-base text-red-600;
+}
+
+.cancel-btn:hover {
+    @apply text-red-400;
+}
