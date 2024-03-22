@@ -10,6 +10,6 @@ export default defineConfig({
     host: "0.0.0.0",
     port: process.env.PORT || 10000,
   },
-  base: "https://github.com/suradeshivam/Twinsis/tree/main/frontend",
+  base: "https://github.com/suradeshivam/Twinsis",
   plugins: [react()],
 });
