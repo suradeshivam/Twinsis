@@ -7,6 +7,9 @@ export default defineConfig({
     proxy: {
       "/api": "https://twinsis.onrender.com",
     },
+    host: true,
+    strictPort: true,
+    port: 8000,
   },
   plugins: [react()],
 });

@@ -24,7 +24,7 @@ const Appointments = () => {
   const getAllAppointments = async () => {
     try {
       const data = await axios.get(
-        "/api/appointment/65f01c5c79fb2220f974cf88",
+        "/api/appointment/65fd1e9dc5a3c0cbb69d0a6a",
         {
           headers: {
             "Content-Type": "application/json",
