@@ -13,10 +13,7 @@ connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "https://65fdb9a0071f062da561aa6a--beautiful-horse-b76c05.netlify.app",
-    ],
+    origin: ["http://localhost:3000", "https://papaya-yeot-1f2bab.netlify.app"],
   })
 );
 
