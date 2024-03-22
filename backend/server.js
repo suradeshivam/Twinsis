@@ -11,6 +11,14 @@ connectDB();
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("<h1> Working <h1>");
+});
+
+app.get("/data", (req, res) => {
+  res.send("<h1> Some Data <h1>");
+});
+
 app.use("/api/user", user);
 app.use("/api/appointment", appointment);
 app.use("/api/doctor", doctor);
