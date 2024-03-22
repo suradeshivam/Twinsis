@@ -15,8 +15,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
+      "https://startling-cassata-880770.netlify.app",
       "https://papaya-yeot-1f2bab.netlify.app",
-      "https://65fdce183ad3b647742b9579--startling-cassata-880770.netlify.app",
     ],
   })
 );
