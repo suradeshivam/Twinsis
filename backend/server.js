@@ -5,11 +5,12 @@ const user = require("./routes/userRoutes");
 const appointment = require("./routes/appointementRoutes");
 const doctor = require("./routes/doctorRoutes");
 const cors = require("cors");
+const misc = require("./routes/miscRoutes");
 
 const app = express();
 dotenv.config();
 connectDB();
-
+app.use("/files", express.static("files"));
 app.use(express.json());
 app.use(
   cors({
@@ -32,6 +33,7 @@ app.get("/data", (req, res) => {
 app.use("/api/user", user);
 app.use("/api/appointment", appointment);
 app.use("/api/doctor", doctor);
+app.use("/api/misc", misc);
 
 app.listen(process.env.PORT, () => {
   console.log(`server is listening on ${process.env.PORT}`);

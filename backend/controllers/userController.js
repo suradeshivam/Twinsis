@@ -85,11 +85,4 @@ const updateInfo = async (req, res) => {
   }
 };
 
-const uploadPdf = async (req, res) => {
-  console.log(req.file);
-  res.json({
-    msg: "hi",
-  });
-};
-
-module.exports = { userRegister, userLogin, updateInfo, check, uploadPdf };
+module.exports = { userRegister, userLogin, updateInfo, check };

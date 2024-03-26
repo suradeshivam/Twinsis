@@ -1,23 +1,28 @@
 const mongoose = require("mongoose");
 
 const doctorSchema = new mongoose.Schema({
-  name: {
+  firstName: {
     type: String,
-    required: true,
+    required: [true, "Please Enter First Name"],
+  },
+  lastName: {
+    type: String,
   },
   email: {
     type: String,
-    required: true,
+    required: [true, "Email is Required"],
     unique: true,
   },
   password: {
     type: String,
-    required: true,
+    required: [true, "Password is required"],
   },
   mobile: {
     type: String,
-    required: true,
     unique: true,
+  },
+  dob: {
+    type: Date,
   },
   documents: [
     {
@@ -57,6 +62,50 @@ const doctorSchema = new mongoose.Schema({
       required: true,
     },
   },
+  gender: {
+    type: String,
+  },
+  hospitalName: {
+    type: String,
+  },
+  hospitalAddress: {
+    line1: {
+      type: String,
+      required: true,
+    },
+    line2: {
+      type: String,
+      required: true,
+    },
+    city: {
+      type: String,
+      required: true,
+    },
+    state: {
+      type: String,
+      required: true,
+    },
+    contry: {
+      type: String,
+      required: true,
+    },
+  },
+  education: [
+    {
+      degree: {
+        type: String,
+        required: true,
+      },
+      yearOfCompletion: {
+        type: Number,
+        required: true,
+      },
+      collegeName: {
+        type: String,
+        required: true,
+      },
+    },
+  ],
   appointements: [
     {
       type: mongoose.Schema.Types.ObjectId,

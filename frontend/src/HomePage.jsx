@@ -13,7 +13,11 @@ const HomePage = () => {
       });
   });
 
-  return <div className="h-96 bg-blue-200">HomePage</div>;
+  return (
+    <>
+      <div className="h-96 bg-blue-200">Home Page</div>
+    </>
+  );
 };
 
 export default HomePage;
