@@ -21,6 +21,7 @@ const uploadPdf = async (req, res) => {
 
 const getFiles = async (req, res) => {
   try {
+    console.log("working fine");
     const data = await PDF.find().then((data) => {
       res.status(200).json({
         success: true,
